@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>lunbo</title>
+	<style type="text/css">
+		.wrap {
+			width: 796px;
+			height: 296px;
+			margin: 40px auto;
+			position: relative;
+			overflow: hidden;
+		}
+
+		.dotNumber {
+			position: absolute;
+			top: 230px;
+			right: 40px;
+		}
+
+		.dotNumber ul {
+			overflow: hidden;
+		}
+		
+		.dotNumber ul li {
+			width: 20px;
+			height: 20px;
+			float: left;
+			margin-right: 14px;
+			text-align: center;
+			border-radius: 10px;
+			background-color: #69c;
+			list-style: none;
+			cursor: pointer;
+		}
+
+		.on {
+			background-color: #e52325 !important;
+		}
+
+		.array {
+			display: inline-block;
+			position: absolute;
+			top: 85px;
+			font-weight: bolder;
+			font-size: 100px;
+			color: #e52325;
+			background-color: rgba(160, 169, 127, .5);
+			opacity: 0;
+			cursor: pointer;
+		}
+
+		.left {
+			left: 40px;
+		}
+
+		.right {
+			right: 40px;
+		}
+
+	</style>
+</head>
+<body>
+	<div class="wrap">
+		<div class="dotNumber">
+			<ul>
+				<li class="on">1</li>
+				<li>2</li>
+				<li>3</li>
+				<li>4</li>
+				<li>5</li>
+				<li>6</li>
+				<li>7</li>
+				<li>8</li>
+			</ul>
+		</div>
+		<div class="imgs">
+			<img src="images/1.jpg">
+		</div>
+
+		<div class="array left">&lt;</div>
+		<div class="array right">&gt;</div>
+	</div>
+
+	<script type="text/javascript">
+		var ul = document.getElementsByClassName('dotNumber')[0].getElementsByTagName('ul');
+		var li = document.getElementsByClassName('dotNumber')[0].getElementsByTagName('li');
+		var img = document.getElementsByTagName('img')[0];
+		var dotN = document.getElementsByClassName('dotNumber')[0];
+		var left = document.getElementsByClassName('left')[0];
+		var right = document.getElementsByClassName('right')[0];
+		var array = document.getElementsByClassName('array')[0];
+
+		var arr = ['images/1.jpg','images/2.jpg','images/3.jpg','images/4.jpg','images/5.jpg','images/6.jpg','images/7.jpg','images/8.jpg'];
+		var index = 0;
+		var tt;
+		window.onload = function(){
+			tt = setInterval(showTimes,1500);
+
+			dotN.addEventListener('mouseover',function(){
+				clearInterval(tt);
+			});
+			dotN.addEventListener('mouseout',function(){
+				tt = setInterval(showTimes,1500);
+			});
+
+			for(let i =0; i < li.length; i ++){
+				li[i].addEventListener('click',function(){
+			
+					li[index].className = '';
+					index = i;
+					img.src = arr[i];
+					li[i].className = 'on';
+				});
+			}
+
+			left.onmouseover = showArray;
+			left.onmouseout = hiddenArray;
+			right.onmouseover = showArray;
+			right.onmouseout = hiddenArray;
+
+			left.onclick = function(){
+				li[index].className = '';
+				if(index == 0){
+					index = li.length - 1;
+				}else{
+					index -=1;
+				}
+				img.src = arr[index];
+				li[index].className = 'on';
+			}
+
+			right.onclick = function(){
+				li[index].className = '';
+				if(index == li.length -1){
+					index = 0;
+				}else{
+					index +=1;
+				}
+				img.src = arr[index];
+				li[index].className = 'on';
+			}
+		}
+
+		function showTimes(){
+				li[index].className = '';
+				index += 1;
+				if(index > arr.length - 1){
+					index = 0;
+				}else if(index < 0){
+					index = arr.length -1;
+				}
+
+				img.src = arr[index];
+				li[index].className = 'on';
+			}
+
+		function showArray(){
+			clearInterval(tt);
+			left.style.opacity = 1;
+			right.style.opacity = 1;
+		}
+
+		function hiddenArray(){
+			tt = setInterval(showTimes,1500);
+			left.style.opacity = 0;
+			right.style.opacity = 0;
+		}
+	</script>
+</body>
+</html>
