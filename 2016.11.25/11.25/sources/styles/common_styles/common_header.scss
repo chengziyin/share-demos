@@ -1,0 +1,45 @@
+.clearfix {
+	overflow: hidden;
+}
+
+* {
+	margin: 0;
+	padding: 0;
+}
+
+.header_bar {
+	height: 50px;
+	width: 100%;
+	margin: auto;
+	background-color: #444;
+	ul {
+		height: inherit;
+		float: right;
+		margin-right: 5%;
+		list-style: none;
+		display: flex;
+		align-items: center;
+		li {
+			height: 27px;
+			float: left;
+			margin-right: 10px;
+			text-align: center;
+			line-height: 27px;
+			a {
+				text-decoration: none;
+				color: #fff;
+				span {
+				    width: 160px;
+   					display: inline-block;
+					background: url('../../images/image/icon1.png') no-repeat left center;
+				}
+			}
+		}
+
+		.line {
+			width: 1px;
+			height: 16px;
+			background-color: #fff;
+		}
+	}
+}

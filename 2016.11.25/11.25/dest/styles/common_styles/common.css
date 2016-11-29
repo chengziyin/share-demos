@@ -1,0 +1,70 @@
+.aboutusDiv {
+  top: 120px;
+  z-index: 1;
+  position: absolute;
+  border: 1px solid #000;
+  border-top: none;
+  width: 429px;
+  left: -170px;
+  background-color: #ccc;
+}
+
+.aboutusDiv ul {
+  float: left;
+}
+
+.aboutusDiv ul li {
+  float: none !important;
+  height: 60px !important;
+  line-height: 60px !important;
+}
+
+.aboutusDiv ul li a {
+  color: #000 !important;
+}
+
+.aboutusDiv .imgDiv {
+  text-align: center;
+  color: #000 !important;
+}
+
+.aboutusDiv .imgDiv img {
+  width: 260px;
+  height: 140px;
+}
+
+.aboutusDiv .imgDiv a {
+  color: blue !important;
+}
+
+.oDiv {
+  top: 120px;
+  z-index: 1;
+  position: absolute;
+  border: 1px solid #000;
+  border-top: none;
+  width: 750px;
+  left: -450px;
+  background-color: #ccc;
+}
+
+.oDiv h5 {
+  line-height: 30px;
+}
+
+.oDiv .listTop {
+  float: left;
+  width: 184px;
+}
+
+.oDiv .listTop p {
+  height: 24px;
+  line-height: 24px;
+  text-align: left;
+}
+
+.oDiv .listTop a {
+  line-height: 30px;
+  display: block;
+  text-align: left;
+}

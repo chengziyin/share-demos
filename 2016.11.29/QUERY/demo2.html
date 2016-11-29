@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<script src="../../common files/jquery-3.1.1.min.js"></script>
+	<style type="text/css">
+		table {
+			margin: auto;
+			border-collapse: collapse;
+		}
+
+		td {
+			width: 100px;
+			padding: 10px;
+			text-align: center;
+		}
+		
+		/*奇数行背景*/
+		.oddColor {
+			background-color: #bc1339;
+		}
+
+		/*偶数行背景*/
+		.evenColor {
+			background-color: #9c9;
+		}
+
+		/*鼠标滑过背景*/
+		.hoverColor {
+			background-color: #ddbdff;
+		}
+	</style>
+	<script>
+		$(document).ready(() => {
+			$('table tr:odd').addClass('oddColor').hover(function(){
+				$(this).toggleClass('oddColor').toggleClass('hoverColor');
+			})
+			$('table tr:even').addClass('evenColor').hover(function(){
+				$(this).toggleClass('evenColor').toggleClass('hoverColor');
+			})
+			// $('#t tr').mouseenter(function(){
+			// 	// alert($(this).index());
+			// 	$(this).removeAttr('class').addClass('hoverColor');
+			// });
+		});
+	</script>
+</head>
+<body>
+	<table id="t">
+		<tr>
+			<th>学号</th>
+			<th>姓名</th>
+			<th>年龄</th>
+			<th>性别</th>
+		</tr>
+		<tr>
+			<td>12345</td>
+			<td>王</td>
+			<td>32</td>
+			<td>男</td>
+		</tr>
+		<tr>
+			<td>12346</td>
+			<td>李</td>
+			<td>22</td>
+			<td>男</td>
+		</tr>
+		<tr>
+			<td>12347</td>
+			<td>张</td>
+			<td>10</td>
+			<td>男</td>
+		</tr>
+		<tr>
+			<td>12348</td>
+			<td>王赵</td>
+			<td>25</td>
+			<td>女</td>
+		</tr>
+		<tr>
+			<td>12349</td>
+			<td>王芳</td>
+			<td>22</td>
+			<td>女</td>
+		</tr>
+		<tr>
+			<td>12350</td>
+			<td>王斌</td>
+			<td>21</td>
+			<td>男</td>
+		</tr>
+		<tr>
+			<td>12351</td>
+			<td>钱钱</td>
+			<td>26</td>
+			<td>男</td>
+		</tr>
+		<tr>
+			<td>12352</td>
+			<td>王孙</td>
+			<td>29</td>
+			<td>男</td>
+		</tr>
+		<tr>
+			<td>12353</td>
+			<td>李素</td>
+			<td>32</td>
+			<td>女</td>
+		</tr>
+	</table>
+</body>
+</html>

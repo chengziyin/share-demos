@@ -1,0 +1,60 @@
+.aboutusDiv {
+    top: 120px;
+    z-index: 1;
+	position: absolute;
+	border: 1px solid #000;
+	border-top: none;
+    width: 429px;
+    left: -170px;
+    background-color: #ccc;
+	ul {
+		float: left;
+		li {
+			float: none !important;
+			height: 60px !important;
+			line-height: 60px !important;
+			a {
+				color: #000 !important;
+			}
+		}
+	}
+	.imgDiv {
+		text-align: center;
+		color: #000 !important;
+		img {
+			width: 260px;
+			height: 140px;
+		}
+		a {
+			color: blue !important;
+		}
+	}
+}
+
+.oDiv {
+	top: 120px;
+    z-index: 1;
+	position: absolute;
+	border: 1px solid #000;
+	border-top: none;
+    width: 750px;
+    left: -450px;
+    background-color: #ccc;
+    h5 {
+    	line-height: 30px;
+    }
+    .listTop {
+    	float: left;
+    	p {
+    		height: 24px;
+			line-height: 24px;
+    		text-align: left;
+    	}
+    	width: 184px;
+    	a {
+    		line-height: 30px;
+    		display: block;
+    		text-align: left;
+    	}
+    }
+}

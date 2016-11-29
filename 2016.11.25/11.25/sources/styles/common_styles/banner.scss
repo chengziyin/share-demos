@@ -1,0 +1,38 @@
+.banner {
+	width: 1200px;
+	margin: auto;
+	overflow: hidden;
+	position: relative;
+	.banner_div {
+		height: 305px;
+		width: 2400px;
+		position: relative;
+		img {
+			width: 1200px;
+			height: inherit;
+			float: left;
+			position: relative;
+		}
+	}
+}
+
+.dots {
+	position: relative;
+	overflow: hidden;
+	float: right;
+	right: 220px;
+	top: -30px;
+	ul {
+		list-style: none;
+		overflow: hidden;
+		li {
+			width: 20px;
+			height: 20px;
+			float: left;
+			margin-right: 30px;
+			border-radius: 10px;
+			background-color: rgba(0,0,112,.6);
+			cursor: pointer;
+		}
+	}
+}

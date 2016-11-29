@@ -1,0 +1,105 @@
+		body {
+				font-size: 10pt;
+			}
+			
+			* {
+				margin: 0px;
+				padding: 0px;
+			}
+			
+			#mainbox {
+				width: 800px;
+				margin: 0px auto;
+				}
+			
+			.header {
+				line-height: 60px;
+				height: 60px;
+				margin: 10px auto;
+			}
+			
+			.nav a {
+				text-decoration: none;
+				color: blue;
+				line-height: 26px;
+			}
+			
+			.navlist ul {
+				list-style: none;
+			}
+			
+			.navlist ul li {
+				float: left;
+				height: 23px;
+				line-height: 26px;
+			}
+			
+			.navlistleft {
+				background: url(../images/taobao_bg.png) no-repeat;
+				background-position: -12px -92px;
+				width: 3px;
+				height: 23px;
+			}
+			
+		
+			
+			.prodectlist {
+				clear: both;
+			}
+			
+		
+			.navlist_red {
+				background-color: #ff6600;
+				text-align: center;
+				font-size: 14px;
+				font-weight: bold;
+				color: #FFF;
+				width: 130px;
+			}
+			
+			.navlist_red_arrow {
+				background-color: #ff6600;
+				background-image: url(../images/taobao_bg.png);
+				background-repeat: no-repeat;
+				background-position: 0px 0px;
+				width: 13px;
+			}
+			
+			.navlist_gray {
+				background-color: #e4e4e4;
+				text-align: center;
+				font-size: 14px;
+				font-weight: bold;
+				width: 150px;
+			}
+			
+			.navlist_gray_arrow {
+				background-color: #e4e4e4;
+				background-image: url(../images/taobao_bg.png);
+				background-repeat: no-repeat;
+				background-position: 0px 0px;
+				width: 13px;
+			}
+			
+			.navlist_gray_right {
+				background-image: url(../images/taobao_bg.png);
+				background-repeat: no-repeat;
+				background-position: -12px -138px;
+				width: 3px;
+			}
+			
+		  .tbpro{border:none;width: 800px; border-collapse: 0px;}
+		  .tbpro th{font-weight: normal;}
+		  .tbpro tr{ margin-top:10px;}
+		  .tbpro a{ color: #00A8FF; text-decoration: none;}		    
+		  .tbpro hr{ border: 2px #00BFFF solid;}
+		  .dianpu{}
+		  .product{ height: 90px; background:#E2F2FF; padding: 5px;}
+		  .imgbox{ width: 80px; height: 80px; float: left;}
+		  .proinfo{width: 260px;float: left;}
+		  .w350{width: 350px;}
+		  .num_input{ width: 30px; }
+		  	.hand{cursor:pointer;}
+			.shopend{text-align:right;padding-right:10px;padding-bottom:10px;}
+			.yellow{font-weight:bold;color:#fe6400;font-size:18px;line-height:40px;}
+			.w80{width: 80px;}

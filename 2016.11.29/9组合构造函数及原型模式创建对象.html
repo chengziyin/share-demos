@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+	</head>
+	<body>
+		<script type="text/javascript">
+			function Person(name,age,job)
+			{
+				this.name=name;
+				this.age=age;
+				this.job=job;
+				this.lessons=['HTML','css','javascript']
+			}
+			
+			Person.prototype={
+				constructor:Person,
+				getName:function(){
+					return this.name;
+				}
+			}
+			
+			var per1=new Person('张三',25,'前端工程师');
+			per1.lessons.push('Bootstrap')
+			document.write('姓名：'+per1.name+',年龄：'+per1.age+",工作："+per1.job+" 擅长： "+per1.lessons+"<br/>");
+			
+			var per2=new Person('李四',30,'php工程师')
+			//alert(per1.getName)
+			//alert(per1.getName()===per2.getName())
+		</script>
+	</body>
+</html>

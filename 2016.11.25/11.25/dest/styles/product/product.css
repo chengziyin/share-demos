@@ -1,0 +1,88 @@
+.content_body {
+  margin: 30px 3% 40px 3%;
+}
+
+.content_body .content_head_list .list {
+  width: 238px;
+  height: 185px;
+  float: left;
+  margin-right: 2px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #ccc;
+  cursor: pointer;
+}
+
+.content_body .content_head_list .list p {
+  color: #333;
+}
+
+.content_body .content_head_list .list:hover {
+  background-color: #005BAB;
+}
+
+.content_body .content_head_list .list:hover p {
+  color: #fff;
+}
+
+.content_body .item_list {
+  margin-top: 30px;
+}
+
+.content_body .item_list ul {
+  list-style: none;
+}
+
+.content_body .item_list ul li {
+  text-align: centere;
+  width: 298px;
+  height: 245px;
+  float: left;
+  border: 1px solid #ccc;
+}
+
+.content_body .item_list ul li img {
+  width: 298px;
+  height: 195px;
+}
+
+.content_body .item_list ul li p {
+  text-align: center;
+}
+
+.content_body .listUl {
+  list-style: none;
+  width: 37%;
+  margin: auto;
+  margin-top: 50px;
+}
+
+.content_body .listUl li {
+  width: 60px;
+  height: 30px;
+  line-height: 30px;
+  float: left;
+  margin-right: 10px;
+  text-align: center;
+}
+
+.content_body .listUl li a {
+  display: inline-block;
+  width: 50px;
+  text-decoration: none;
+}
+
+.content_body .listUl li:hover {
+  background-color: #005BAB;
+}
+
+.content_body .listUl li:hover a {
+  color: #fff;
+}

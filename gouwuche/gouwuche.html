@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="css/gouwuchestyle.css" />
+    
+	</head>
+
+	<body>
+		<div id="mainbox">
+			<div class="header">
+				<img src="images/taobao_logo.gif" />
+			</div>
+			<div class="nav">
+				你现在的位置：<a href="#">首页></a><a href="#">我的淘宝></a>我的购物车
+			</div>
+			<div class="navlist">
+				<ul>
+					<li class="navlistleft"></li>
+					<li class="navlist_red">1. 查看购物车</li>
+					<li class="navlist_red_arrow"></li>
+					<li class="navlist_gray">2. 确认订单信息</li>
+					<li class="navlist_gray_arrow"></li>
+					<li class="navlist_gray">3. 付款到支付宝</li>
+					<li class="navlist_gray_arrow"></li>
+					<li class="navlist_gray">4. 确认收货</li>
+					<li class="navlist_gray_arrow"></li>
+					<li class="navlist_gray">5. 评价</li>
+					<li class="navlist_gray_right"></li>
+				</ul>
+
+			</div>
+			<div class="prodectlist">
+				<!-- <form action="" method="post"> -->
+					<table class="tbpro" id="tbpro">
+						<tr class="row1">
+							<th><input type="checkbox" id="checkall" ><span>全选</span></th>
+							<th class="w350"><span>店铺宝贝</span></th>
+							<th><span>获得积分</span></th>
+							<th><span>单价（元）</span></th>
+							<th><span>数量</span></th>
+							<th><span>小计</span></th>
+							<th><span>操作</span></th>
+
+						</tr>
+						<tr>
+							<td colspan="7">
+								<hr/>
+							</td>
+						</tr>
+						<tr class="dianpu">
+							<td colspan="7" class="shopInfo">店铺：<a href="#">纤巧百媚时尚鞋坊</a>卖家:<a href="#">纤巧百媚</a> <img src="images/taobao_relation.jpg" /></td>
+
+						</tr>
+
+						<tr class="product">
+							<td style="text-align: center;">
+								<input name="cartCheckBox" type="checkbox" />
+							</td>
+							<td class="w350">
+								<div class="imgbox"><img src="images/taobao_cart_01.jpg" alt="shopping" /></div>
+								<div class="proinfo">
+									<a href="#">日韩流行风时尚美眉最爱独特米字拼图金属坡跟公主靴子黑色</a>
+									<div> 颜色：<span>棕色</span> 尺码：<span>37</span></div>
+									<div>保障： <img src="images/taobao_icon_01.jpg" alt="icon" /></div>
+								</div>
+							</td>
+							<td>5</td>
+							<td>99.9</td>
+							<td><img src="images/taobao_minus.jpg" name="sub" />
+								<input id="num_1" type="text" value="1" name="num" class="num_input" readonly="readonly" /> <img src="images/taobao_adding.jpg" alt="add" name="add" /></td>
+							<td class="w80">0.00</td>
+							<td><a href="#" name="deleterow"  id="delbtn1" onclick="deleteobj()">删除</a></td>
+						</tr>
+
+						<tr class="dianpu">
+							<td colspan="7" class="shopInfo">店铺：<a href="#">香港我的美丽日记</a>卖家:<a href="#">纤巧百媚</a> <img src="images/taobao_relation.jpg" /></td>
+
+						</tr>
+
+						<tr class="product">
+							<td style="text-align: center;">
+								<input name="cartCheckBox" type="checkbox" />
+							</td>
+							<td class="w350">
+								<div class="imgbox"><img src="images/taobao_cart_02.jpg" alt="shopping" /></div>
+								<div class="proinfo">
+									<a href="#">chanel/香奈尔/香奈尔炫亮魅力唇膏3.5g </a>
+									<div> 颜色：<span>棕色</span> 尺码：<span>37</span></div>
+									<div>保障： <img src="images/taobao_icon_01.jpg" alt="icon" /></div>
+								</div>
+							</td>
+							<td>5</td>
+							<td>138.00</td>
+							<td><img src="images/taobao_minus.jpg" name="sub" />
+								<input id="num_1" type="text" value="1" name="num" class="num_input" readonly="readonly" /> <img src="images/taobao_adding.jpg" alt="add" name="add" /></td>
+							<td class="w80">0.00</td>
+							<td><a href="#" name="deleterow" onclick="deleteobj()">删除</a></td>
+						</tr>
+
+						<tr class="dianpu">
+							<td colspan="7" class="shopInfo">店铺：<a href="#">实体经营</a>卖家:<a href="#">纤巧百媚</a> <img src="images/taobao_relation.jpg" /></td>
+
+						</tr>
+
+						<tr class="product">
+							<td style="text-align: center;">
+								<input name="cartCheckBox" type="checkbox" />
+							</td>
+							<td class="w350">
+								<div class="imgbox"><img src="images/taobao_cart_03.jpg" alt="shopping" /></div>
+								<div class="proinfo">
+									<a href="#">蝶妆海蓝清滢粉底液10#（象牙白） </a>
+									<div> 颜色：<span>棕色</span> 尺码：<span>37</span></div>
+									<div>保障： <img src="images/taobao_icon_01.jpg" alt="icon" /></div>
+								</div>
+							</td>
+							<td>5</td>
+							<td>138.00</td>
+							<td><img src="images/taobao_minus.jpg" name="sub" />
+								<input id="num_1" type="text" value="1" name="num" class="num_input" readonly="readonly" /> <img src="images/taobao_adding.jpg" name="add" /></td>
+							<td class="w80">0.00</td>
+							<td><a href="#" name="deleterow" onclick="deleteobj()">删除</a></td>
+						</tr>
+
+						<tr class="dianpu">
+							<td colspan="7" class="shopInfo">店铺：<a href="#">红豆豆的小屋</a>卖家:<a href="#">纤巧百媚</a> <img src="images/taobao_relation.jpg" /></td>
+
+						</tr>
+
+						<tr class="product">
+							<td style="text-align: center;">
+								<input name="cartCheckBox" type="checkbox" />
+							</td>
+							<td class="w350">
+								<div class="imgbox"><img src="images/taobao_cart_04.jpg" alt="shopping" /></div>
+								<div class="proinfo">
+									<a href="#">相宜促销专供 大S推荐 最好用的LilyBell化妆棉 </a>
+									<div> 颜色：<span>棕色</span> 尺码：<span>37</span></div>
+									<div>保障： <img src="images/taobao_icon_01.jpg" alt="icon" /></div>
+								</div>
+							</td>
+							<td>5</td>
+							<td>138.00</td>
+							<td><img src="images/taobao_minus.jpg" name="sub" />
+								<input id="num_2" type="text" value="1" name="num" class="num_input" readonly="readonly" /> <img src="images/taobao_adding.jpg" alt="add" name="add" /></td>
+							<td class="w80">0.00</td>
+							<td><a href="#" name="deleterow" onclick="deleteobj()">删除</a></td>
+						</tr>
+
+						<tr>
+							<td colspan="3">
+								<button id="deleteAll">删除全部</button>
+							</td>
+							<td colspan="4" class="shopend">商品总价（不含运费）：
+								<label id="total" class="yellow">0</label> 元
+								<br /> 可获积分
+								<label class="yellow" id="integral">0</label> 点
+								<br />
+								<input name=" " type="image" src="images/taobao_subtn.jpg" />
+							</td>
+						</tr>
+					</table>
+				<!-- </form> -->
+			</div>
+
+		</div>
+		
+		<script src="js/gouwuchejs.js"></script> 
+	</body>
+
+</html>

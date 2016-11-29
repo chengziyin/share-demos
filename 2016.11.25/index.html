@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style type="text/css">
+		.wrap {
+			width: 1000px;
+			height: 385px;
+			margin: 40px auto;
+			background-color: rgb(243,62,159);
+		}
+
+		.clearfix {
+			overflow: auto;
+		}
+
+		.left {
+			width: 244px;
+			float: left;
+			margin-top: 8px;
+			margin-left: 8px;
+			border-right: 1px solid #fff;
+		}
+
+		.left_top,
+		.left_bottom,
+		.right_top_left,
+		.right_top_right,
+		.right_bottom_left,
+		.right_bottom_middle,
+		.right_bottom_right {
+			overflow: hidden;
+		}
+		.left_top img,
+		.left_bottom img {
+			margin-left: 2px;
+			position: relative;
+		}
+
+		.left_top {
+			width: 244px;
+			height: 240px;
+			margin-top: 2px;
+			padding-bottom: 1px;
+			border-bottom: 1px solid #fff;
+			z-index: 9999;
+		}
+		.left_bottom {
+			width: 244px;	
+			height: 112px;
+			padding-top: 1px;
+		}
+
+		.right {
+			margin-top: 10px;
+			float: left;
+			border-right: 2px solid #fff;
+			padding-right: 2px;
+		}
+
+		.right_top {
+			border-bottom: 1px solid #fff;
+			padding-bottom: 1px;
+		}
+
+		.right_top_left {
+			width: 385px;
+			height: 178px;
+			float: left;
+			margin-left: 3px;
+			padding-right: 2px;
+			border-right: 1px solid #fff;
+		}
+		.right_top_right {
+			width: 306px;
+			height: 178px;
+			padding-left: 2px;
+		}
+
+		.right_bottom {
+			padding-top: 1px;
+		}
+
+		.right_bottom_left {
+			width: 201px;
+			height: 173px;
+			float: left;
+			margin-left: 3px;
+			border-right: 1px solid #fff;
+			padding-right: 2px;
+		}
+		.right_bottom_middle {
+			width: 314px;
+			height: 173px;
+			float: left;
+			padding-left: 2px;
+			padding-right: 2px;
+		}
+		.right_bottom_right {
+			width: 170px;
+			height: 173px;
+			border-left: 1px solid #fff;
+			padding-left: 2px;
+		}
+
+		.right_top_left img,
+		.right_top_right img,
+		.right_bottom_left img,
+		.right_bottom_middle img,
+		.right_bottom_right img {
+			position:relative;
+		}
+
+	</style>
+</head>
+<body>
+	<div class="wrap">
+		<div class="left">
+			<div class="left_top box">
+				<img id="e1" src="images/relian.jpg" style="top: 0;">
+				<img src="images/relian2.jpg" style="top: 0;">
+			</div>
+			<div class="left_bottom box">
+				<img src="images/jiqing.jpg" style="top: 0;">
+				<img src="images/jiqing2.jpg" style="top: 0;">
+			</div>
+		</div>
+		<div class="right">
+			<div class="right_top">
+				<div class="right_top_left box">
+					<img src="images/miyue.jpg" style="top: 0;">
+					<img src="images/miyue2.jpg" style="top: 0;">
+				</div>
+				<div class="right_top_right box">
+					<img src="images/qinzi.jpg" style="top: 0;">
+					<img src="images/qinzi2.jpg" style="top: 0;">
+				</div>
+			</div>
+			<div class="right_bottom">
+				<div class="right_bottom_left box">
+					<img src="images/xfq.jpg" style="top: 0;">
+					<img src="images/xfq2.jpg" style="top: 0;">
+				</div>
+				<div class="right_bottom_middle box">
+					<img src="images/qianshou.jpg" style="top: 0;">
+					<img src="images/qianshou2.jpg" style="top: 0;">
+				</div>
+				<div class="right_bottom_right box">
+					<img src="images/jiqing3.jpg" style="top: 0;">
+					<img src="images/jiqing3.jpg" style="top: 0;">
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<script type="text/javascript">
+		var box = document.getElementsByClassName('box');
+		var e1 = document.getElementById('e1');
+		var tt,bb;
+		for(let i = 0; i < box.length; i ++){
+			box[i].onmouseenter = function(){
+				let img = '';
+				let h = 0;
+				img = box[i].getElementsByTagName('img');
+				h = img[0].height;
+				if(img[0].style.top != '0px'){
+					return;
+				}else{
+					clearInterval(tt);
+					tt = setInterval(function(){
+					for(var j = 0; j < img.length; j ++){
+					img[j].style.top = parseInt(img[j].style.top)-1+ 'px';
+					if(img[0].style.top == (-h + 'px')){
+						clearInterval(tt);
+						}
+					}
+					},1);
+				}
+					
+			}
+			box[i].onmouseout = function(){
+				let img2 = '';
+				let m = 0;
+				img2 = box[i].getElementsByTagName('img');
+				m = img2[0].height;
+				if(img2[0].style.top != (-m + 'px')){
+					return;
+				}else{
+					clearInterval(bb);
+					bb = setInterval(function(){
+					for(var i = 0; i < img2.length; i ++){
+					img2[i].style.top = parseInt(img2[i].style.top)+1 + 'px';
+					if(img2[0].style.top == '0px')
+					{
+					clearInterval(bb);
+					}
+					}	
+				},1);
+				}
+				
+			}
+		}
+	</script>
+</body>
+</html>

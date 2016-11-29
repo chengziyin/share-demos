@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+	</head>
+	<body>
+		<script type="text/javascript">
+			var person={
+				name:"tiger",
+			    age:30,
+				getMajor:function(val){
+					return val;
+				}				
+			}
+			
+			person.weight="70kg";
+				//alert(person.weight)
+				//delete person.name;
+		    document.write("<div>姓名："+person.name+"</div>")
+			document.write("<div>年龄："+person.age+"</div>")
+			document.write("<div>体重："+person.weight+"</div>")
+			document.write("<div>专业："+person.getMajor('前端技术')+"</div>")
+		</script>
+	</body>
+</html>

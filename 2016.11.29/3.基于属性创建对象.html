@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+	</head>
+	<body>
+		<script type="text/javascript">
+			var person={}
+			Object.defineProperty(person,'name',{
+				configurable:false,//是否允许删除
+				writable:false,//是否允许修改
+				value:'Tiger'
+			})
+			Object.defineProperty(person,'age',{
+				configurable:false,//是否允许删除
+				writable:false,//是否允许修改
+				value:'30'
+			})
+			alert(person.name);
+			alert(person.age);
+			delete person.name;
+			alert(person.name);
+			person.name='李四';
+			alert(person.name)
+		</script>
+	</body>
+</html>

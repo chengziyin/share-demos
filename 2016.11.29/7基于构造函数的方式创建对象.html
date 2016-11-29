@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+	</head>
+	<body>
+		<script type="text/javascript">
+//			var d=new Date()
+//			alert(d.getDay())
+
+         function Person(name,age,job)
+         {
+         	this.name=name;
+         	this.age=age;
+         	this.job=job;
+         	this.sayhello=function(){
+         		return 'hello,my name is'+this.name;
+         	}
+         }
+         
+         var per1=new Person('张三',23,'前端工程师');
+         var per2=new Person('李四',24,'前端设计师');
+         
+         document.write('姓名：'+per1.name+',年龄：'+per1.age+",工作："+per1.job+"  "+per1.sayhello()+"<br/>");
+         document.write('姓名：'+per2.name+',年龄：'+per2.age+",工作："+per2.job+"  "+per2.sayhello());
+         
+		</script>
+	</body>
+</html>

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+	</head>
+	<body>
+		<script type="text/javascript">
+			var person={}
+			Object.defineProperties(person,{
+				name:{
+					writable:true,//是否允许修改
+					value:'李四'
+				},
+				age:{
+					writable:true,
+					value:30
+				},
+				isAdult:{
+					get:function(){
+						if(this.age>=18)
+						{
+							return '成年';
+						}else
+						{
+							return '未成年';
+						}
+					}
+				}
+				
+			});
+			
+			person.name='张三'
+			person.age=16
+			
+			document.write('姓名：'+person.name+"<br/> 年龄："+person.age+"<br/>是否成年："+person.isAdult);
+		</script>
+	</body>
+</html>

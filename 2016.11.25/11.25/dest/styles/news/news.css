@@ -1,0 +1,75 @@
+.main_content {
+  width: 90%;
+  margin: 50px 5% 40px 5%;
+}
+
+.main_content .content_head {
+  border-bottom: 2px solid #ccc;
+}
+
+.main_content .content_head ul {
+  list-style: none;
+  padding-bottom: 10px;
+}
+
+.main_content .content_head ul li {
+  float: left;
+  margin-right: 20px;
+}
+
+.main_content .content_head ul li a {
+  text-decoration: none;
+  color: #000;
+}
+
+.main_content .content_item ul {
+  list-style: none;
+}
+
+.main_content .content_item ul li {
+  height: 40px;
+  line-height: 40px;
+}
+
+.main_content .content_item ul li a {
+  text-decoration: none;
+  color: #000;
+}
+
+.main_content .content_item ul li a span {
+  float: right;
+}
+
+.main_content .content_item ul li a:hover {
+  color: red;
+}
+
+.main_content .liList {
+  list-style: none;
+  width: 37%;
+  margin: auto;
+  margin-top: 50px;
+}
+
+.main_content .liList li {
+  width: 60px;
+  height: 30px;
+  line-height: 30px;
+  float: left;
+  margin-right: 10px;
+  text-align: center;
+}
+
+.main_content .liList li a {
+  display: inline-block;
+  width: 50px;
+  text-decoration: none;
+}
+
+.main_content .liList li:hover {
+  background-color: #005BAB;
+}
+
+.main_content .liList li:hover a {
+  color: #fff;
+}

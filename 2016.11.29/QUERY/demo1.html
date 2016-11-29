@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<script src="../../common files/jquery-3.1.1.min.js"></script>
+</head>
+<body>
+	<ul>
+		<li>Hello</li>
+		<li>Hello</li>
+		<li>Hi</li>
+	</ul>
+	<script>
+		$(document).ready(() => {
+			$('ul li:eq(0)').addClass(() => {
+				return 'item' + $(this).index();
+			});
+			$('ul li:eq(1)').addClass(() => {
+				return 'item' + $(this).index();
+			});
+		})
+	</script>
+</body>
+</html>

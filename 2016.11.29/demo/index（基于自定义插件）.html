@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style type="text/css">
+			#tbcourse{
+				width: 600px;
+				height: 300px;
+				line-height: 30px;
+				border: solid 1px gray;
+				border-collapse: collapse;
+				margin: 0px auto;
+				cursor: pointer;
+			}
+			#tbcourse td{border:solid 1px gray}
+		  .oddrow{background:#cccccc}
+		  .evenrow{background:#ffffff}
+		  .activerow{background:yellow}
+		  
+		  
+		  .odd{background:#eeeeee}
+		  .even{background:#F0AD4E}
+		  .active{background:orangered}
+		</style>
+	</head>
+	<body>
+		<table id="tbcourse">
+			<tr><th>课程名称</th><th>课时数</th><th>任课老师</th></tr>
+			<tr><td>HTML+CSS</td><td>20</td><td>Tiger</td></tr>
+			<tr><td>JS原生态编程</td><td>20</td><td>Tiger</td></tr>
+			<tr><td>Jquery编程</td><td>20</td><td>Tiger</td></tr>
+			<tr><td>BootStrap</td><td>20</td><td>Tiger</td></tr>
+			<tr><td>Zeptojs</td><td>20</td><td>Tiger</td></tr>
+			<tr><td>Angularjs</td><td>20</td><td>Tiger</td></tr>
+			<tr><td>mysql</td><td>20</td><td>Tiger</td></tr>
+			<tr><td>SqlServer</td><td>20</td><td>Tiger</td></tr>
+			<tr><td>ReactJS</td><td>20</td><td>Tiger</td></tr>
+		</table>
+		<script src="js/jquery-2.1.0.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/jquery.table.js" type="text/javascript" charset="utf-8"></script>
+		<script type="text/javascript">
+			$("#tbcourse").tableUI({
+				evenRowClass:"even",
+		 	    oddRowClass:"odd",
+		 	    activeRowClass:"active"
+			})
+		</script>
+	</body>
+</html>

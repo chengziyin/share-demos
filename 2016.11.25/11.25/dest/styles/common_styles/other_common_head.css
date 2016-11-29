@@ -1,0 +1,56 @@
+header {
+  height: 120px;
+  border-bottom: 1px solid #ccc;
+}
+
+header .left_logo {
+  margin-left: 5%;
+  float: left;
+  margin-top: 20px;
+}
+
+header ul {
+  height: inherit;
+  float: right;
+  margin-right: 5%;
+  list-style: none;
+}
+
+header ul li {
+  height: inherit;
+  float: left;
+  width: 120px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  position: relative;
+}
+
+header ul li a {
+  text-decoration: none;
+  display: inline-block;
+  text-align: center;
+  color: #666;
+}
+
+header ul li a p:first-child {
+  font-size: 22px;
+}
+
+header ul li a p:last-child {
+  font-size: 14px;
+}
+
+header ul li:hover {
+  background-color: #005BAB;
+}
+
+header ul li:hover a {
+  color: #fff;
+}

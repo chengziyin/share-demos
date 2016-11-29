@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+	</head>
+	<body>
+		<script type="text/javascript">
+			function Person(name,age,job)
+			{
+				var o=new Object();
+				o.name=name;
+				o.age=age;
+				o.job=job;
+				o.sayhello=function(){
+					return 'hello,my name is'+this.name;
+				}				
+				return o;				
+			}
+			
+			var person1=Person('小强',18,'清洁工');
+			var person2=Person('小李',20,'前端程序员');
+			var person3=Person('小王',25,'java程序员');
+			
+			
+			document.write(person1.name+"，"+person1.age+"，"+person1.job+"，"+person1.sayhello()+"<br/>");
+			
+			document.write(person2.name+"，"+person2.age+"，"+person2.job+"，"+person2.sayhello()+"<br/>");
+			
+		    document.write(person3.name+"，"+person3.age+"，"+person3.job+"，"+person3.sayhello()+"<br/>");
+		</script>
+	</body>
+</html>
